@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBite - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🥗 SmartBite</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <section class="auth-container">
+        <h2>Welcome Back!</h2>
+        <p>Login to your SmartBite account.</p>
+
+        <form id="loginForm">
+
+            <input type="email" id="loginEmail"
+                   placeholder="Email Address" required>
+
+            <input type="password" id="loginPassword"
+                   placeholder="Password" required>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p>Don't have an account?
+            <a href="register.html">Register here</a>
+        </p>
+
+        <p id="loginMessage"></p>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

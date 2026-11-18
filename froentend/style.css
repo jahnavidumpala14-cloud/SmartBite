@@ -1,0 +1,196 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8f4;
+    color: #26352a;
+}
+
+header {
+    background: #176b45;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero {
+    background: #dff1df;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    color: #176b45;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+button {
+    background: #176b45;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #104b30;
+}
+
+section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 25px;
+    color: #176b45;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 260px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #176b45;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.auth-container {
+    background: white;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px #00000015;
+}
+
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.auth-container p {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.auth-container input,
+.auth-container select {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.auth-container button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.auth-container a {
+    color: #176b45;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#donationForm textarea {
+    width: 100%;
+    min-height: 90px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-family: Arial, sans-serif;
+}
+
+#donationList {
+    max-width: 600px;
+    margin: auto;
+}
+
+.donation-card {
+    background: white;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000012;
+    text-align: left;
+}
+
+.donation-card h3 {
+    color: #176b45;
+    margin-bottom: 10px;
+}
+
+.donation-card p {
+    margin: 8px 0;
+}
+
+#ngoDonationList {
+    max-width: 750px;
+    margin: auto;
+    padding: 10px;
+}
+
+.ngo-card {
+    background: white;
+    padding: 22px;
+    margin: 18px auto;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000012;
+    text-align: left;
+}
+
+.ngo-card h3 {
+    color: #176b45;
+    margin-bottom: 12px;
+}
+
+.ngo-card p {
+    margin: 9px 0;
+}
+
+.ngo-card button {
+    margin-top: 12px;
+}

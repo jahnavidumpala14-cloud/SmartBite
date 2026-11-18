@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBite - Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🥗 SmartBite</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <section class="auth-container">
+        <h2>Create Your Account</h2>
+        <p>Join SmartBite and help reduce food waste.</p>
+
+        <form id="registerForm">
+
+            <input type="text" id="name"
+                   placeholder="Full Name" required>
+
+            <input type="email" id="email"
+                   placeholder="Email Address" required>
+
+            <input type="tel" id="phone"
+                   placeholder="Phone Number" required>
+
+            <input type="text" id="organization"
+                   placeholder="Restaurant / NGO Name" required>
+
+            <select id="role" required>
+                <option value="">Select Account Type</option>
+                <option value="donor">Food Donor</option>
+                <option value="ngo">NGO</option>
+            </select>
+
+            <input type="password" id="password"
+                   placeholder="Create Password" minlength="6" required>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+        <p>Already have an account?
+            <a href="login.html">Login here</a>
+        </p>
+
+        <p id="message"></p>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

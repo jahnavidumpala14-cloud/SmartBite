@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBite - Donor Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🥗 SmartBite</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+<section>
+    <h2>Donation Summary</h2>
+
+    <div class="summary-container">
+
+        <div class="summary-card">
+            <h3 id="totalDonations">0</h3>
+            <p>Total Donations</p>
+        </div>
+
+        <div class="summary-card">
+            <h3 id="availableDonations">0</h3>
+            <p>Available</p>
+        </div>
+
+        <div class="summary-card">
+            <h3 id="requestedDonations">0</h3>
+            <p>Requested</p>
+        </div>
+
+    </div>
+</section>
+<section>
+    <h2>Food Donor Dashboard</h2>
+    <p>Share your surplus food and help someone in need!</p>
+</section>
+
+<section class="auth-container">
+    <h2>Add Food Donation</h2>
+
+    <form id="donationForm">
+
+        <input type="text" id="foodName"
+        placeholder="Food Name" required>
+
+        <input type="number" id="quantity"
+        placeholder="Quantity (in meals)" min="1" required>
+
+        <input type="text" id="location"
+        placeholder="Pickup Location" required>
+
+        <label for="expiry">Food Expiry Date and Time</label>
+        <input type="datetime-local" id="expiry" required>
+
+        <select id="foodType" required>
+            <option value="">Select Food Type</option>
+            <option value="Veg">Vegetarian</option>
+            <option value="Non-Veg">Non-Vegetarian</option>
+        </select>
+
+        <textarea id="description"
+        placeholder="Food Description"></textarea>
+
+        <button type="submit">Submit Donation</button>
+
+    </form>
+
+    <p id="donationMessage"></p>
+</section>
+
+<section>
+    <h2>My Food Donations</h2>
+    <div id="donationList">
+        <p>No donations added yet.</p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
